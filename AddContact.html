@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Person Address Book</title>
+    <link rel="stylesheet" href="AddContact.css">
+    <script defer src="AddContact.js"></script>
+    <script defer src="Contact.js"></script>
+    <script defer src="home.js"></script>
+</head>
+<body>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save(event)">
+            <div class="form-heading" >
+                <h2>CONTACT FORM</h2>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="name">Name: </label>
+                <input class="input" type="text" id="name" name="name" placeholder="Your Full Name....." required>
+                <error-output class="name-error" for="name"></error-output>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="Address">Address: </label>
+                <input class="input" type="text" id="address" name="address" placeholder="Address....." required>
+                <error-output class="address-error" for="Address"></error-output>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="city">City: </label>
+                <input class="input" type="text" id="city" name="city" placeholder="City....." required>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="zip">Zip Code: </label>
+                <input class="input" type="number" id="zip" name="zip" placeholder="Zip Code....." required>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="phone">Phone Number: </label>
+                <input class="input" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <error-output class="number-error" for="phone"></error-output>
+            </div>
+            <div class="buttonParent">
+                    <button type="submit" class="button addButton" id="addButton">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
